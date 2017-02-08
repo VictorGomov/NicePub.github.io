@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://learn.shayhowe.com/practice/working-with-typography/index.html -->
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Restaurant</title>
+    <link rel="stylesheet" href="main.css">
+   
+  </head>
+
+  <body>
+
+  <style type="text/css" >
+    <link rel="stylesheet" href="main.css">
+  </style>
+  
+    <!-- 1. Header:  logo, name, pabaddress  -->
+
+<header >
+  <ul>
+      <li> <img  src="LOGO.png" alt="This is restarurant" width="120" height="100"></li>
+      <li> <div class="logo">Queenston's Grill'N Pub</div></li>
+      <li> <div class="tagline">216 Queenston Street, St. Catharines, ON L2P 2W8</div></li> 
+      <li> <div class= "pablocation"><a href="OurLocation.html">Our location</a> </div></li>                
+  </ul> 
+    
+      <nav class="primary-nav">
+        <a href="index.html">Home</a>
+         <a href="OurMenu.html">Menu</a>
+         <a href="OurDrinks.html">Drinks</a> 
+         <a href="OurInterior.html">Interior</a>
+         <a href="OurCustomers.html">Custormers</a>   
+      </nav>  
+</header>
+   <!-- Map  -->
+
+    
+  <section class="location">  
+<div id="map" style="width:1200px;height:600px;background:gray"></div>
+
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng (43.1616888, -79.2265129),
+    zoom: 18,
+
+     zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: false,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+            },
+            scaleControl: true,
+            scrollwheel: true,
+            panControl: true,
+            streetViewControl: true,
+            draggable : true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: true,
+            },
+
+    mapTypeId: google.maps.MapTypeId.HYBRID
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+</section >
+ 
+ 
+    <!-- 7. Footer -->
+
+    <footer class="primary-footer container group">
+
+      <small>©  VG consulting</small>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+         <a href="OurMenu.html">Menu</a>
+         <a href="OurDrinks.html">Drinks</a> 
+         <a href="OurInterior.html">Interior</a>
+         <a href="OurCustomers.html">Custormers</a>    
+      </nav>  
+      </nav>
+
+    </footer>
+
+  
+</body></html>
