@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  color: #888;  /*#888*/
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color:  #d1e0e0 ;  /*  #f0f5f5 */
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.container1 {
+  height: 480px;
+  padding-left: 10px;
+  padding-right: 20px;
+  margin: 10px 20px 0px 5px ;
+  background-color: #006600;
+}
+.container2 {
+ 
+  height: 200px;
+  padding-left: 40px;
+  padding-right:40px;
+  margin: 0px 20px 0px 5px ;
+  background-color: #006600;
+}
+.container3 {
+ 
+  height: 650px;
+  padding-left: 0px;
+  padding-right:0px;
+  margin: 0px 20px 0px 20px ;
+  background-color: #006600;
+}
+.location {
+  height: 700px;
+  padding-left: 10px;
+  padding-right:20px;
+  margin: 0px 20px 20px 20px ;
+  background-color: #006600;
+ }
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-3,
+.col-2-3  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-3 {
+  width: 33.3%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h2, h3, h4 {
+  color: #648880 ;   /*  #ff0066 #648880 */
+}
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite,
+em {
+  font-style: italic;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #adad85;  /*#adad85, #648880 */
+  text-decoration: underline;
+}
+a:hover {
+  color: #000000 ;   /*  #800000 #141f1f  #d9d9d9  */
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+.btn-alt {
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+  float: left;
+  font-size: 35px;
+  font-family: newromantimes;
+  font-weight: 100;
+  letter-spacing: .5px;
+  line-height: 44px;
+  padding: 10px 50px 0px 10px;
+  text-transform: uppercase;
+ }
+.tagline {
+  margin: 50px 100px 22px 30px;
+  text-align: right;
+  font-size: 15px;
+  font-style: italic;
+}
+.tagline1 {
+  margin: 50px 100px 22px 30px;
+  text-align: left;
+  font-size: 15px;
+  font-style: italic;
+  color:   #004d4d;
+}
+.menuDescription {
+  margin: 10px 100px 0px 5px;
+  text-align: left;
+  font-size: 15px;
+  font-style: italic;
+  color:    #003333;
+}
+.drinksDescription {
+  margin: 0px 50px 0px 10px;
+  text-align: left;
+  font-size: 15px;
+  font-style: italic;
+  color:   #003333;
+}
+.pablocation {
+  float: left;
+  padding: 20px 5px 30px 0px;
+  text-align: right;
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: Harlow Solid Italic;
+ }
+.primary-nav {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  margin: 10px 100px 22px 30px;
+  float: right;
+  border-color: white;
+  }
+.picture1{
+  float: left;
+  padding: 50px 5px 0px 20px;
+  text-align: right;
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: Harlow Solid Italic;
+ }
+ .picture2{
+  float: left;
+  padding: 0px 5px 30px 30px;
+  text-align: right;
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: Harlow Solid Italic;
+ }
+.picture3{
+  float: left;
+  padding: 0.1px 0.1px 0.1px 2px;
+  text-align: right;
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: Harlow Solid Italic;
+ }
+
+
+.video{
+  float: left;
+  padding: 0px 0px 0px 0px;
+  text-align: right;
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: Harlow Solid Italic;
+ }
+ 
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+  color: #648880 ;  /*  #e2e9e8*/
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: right;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.hero {
+  line-height: 30px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 36px;
+}
+.hero p {
+  font-size: 24px;
+  font-weight: 100;
+}
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+
+/* addition class*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e5e5cc;  /*#648880  #e5e5cc , #F8F8FF ,#666633  */
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color:#669999;     /* #00008B      */
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:  #737373;          /* #A9A9A9   */
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
